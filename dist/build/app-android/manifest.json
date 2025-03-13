@@ -1,0 +1,52 @@
+{
+  "id": "__UNI__965F5E0",
+  "name": "game2",
+  "description": "",
+  "version": {
+    "name": "1.8.5",
+    "code": 10805
+  },
+  "uni-app-x": {
+    "compilerVersion": "4.56"
+  },
+  "app": {
+    "distribute": {
+      "modules": {
+        "uni-payment": {
+          "alipay": {},
+          "wxpay": {
+            "android": {},
+            "ios": {
+              "appid": "",
+              "universalLink": ""
+            }
+          }
+        },
+        "uni-getLocation": {
+          "system": {},
+          "tencent": {}
+        },
+        "uni-ad": {},
+        "uni-storage": {},
+        "uni-dialogPage": {},
+        "uni-exit": {},
+        "uni-prompt": {},
+        "uni-privacy": {},
+        "uni-cloud-client": {},
+        "uni-getSystemInfo": {},
+        "uni-getAppBaseInfo": {},
+        "uni-push": {},
+        "uni-event": {}
+      },
+      "icons": {
+        "ios": {
+          "appstore": "package/icon1024.png"
+        },
+        "android": {
+          "xxhdpi": "package/icon144.png",
+          "xxxhdpi": "package/icon192.png"
+        }
+      }
+    }
+  }
+}
