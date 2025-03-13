@@ -1,0 +1,42 @@
+<template>
+  <view class="result-container">
+    <text class="win-text">You Win!</text>
+    <image src="/static/cake.png" class="cake" @click="showMessage"></image>
+    <text v-if="message" class="message">生日快乐，尧姐！🎂</text>
+  </view>
+</template>
+
+<script>
+export default {
+  data() {
+    return { message: "" };
+  },
+  methods: {
+    showMessage() {
+      this.message = "生日快乐，尧姐！🎂";
+    }
+  }
+};
+</script>
+
+<style scoped>
+.result-container {
+  text-align: center;
+  padding: 50px;
+}
+.win-text {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.cake {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+.message {
+  font-size: 24px;
+  color: red;
+  margin-top: 20px;
+}
+</style>

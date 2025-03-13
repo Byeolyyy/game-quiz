@@ -1,0 +1,34 @@
+<template>
+  <view class="container">
+    <text class="title">欢迎来到答题游戏</text>
+    <button class="start-btn" @click="startGame">开始游戏</button>
+  </view>
+</template>
+
+<script>
+export default {
+  methods: {
+    startGame() {
+      uni.navigateTo({ url: '/pages/vine' });
+    }
+  }
+};
+</script>
+
+<style scoped>
+.container {
+  text-align: center;
+  margin-top: 50vh;
+}
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.start-btn {
+  background-color: #42b983;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+</style>
