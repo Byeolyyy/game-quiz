@@ -2,22 +2,19 @@
 <html lang="en">
   <!--本文件为编译到web专用文件-->
   <head>
-    <link rel="stylesheet" href="/web/assets/uni.594cefce.css">
-
     <meta charset="UTF-8" />
-    <script>
-      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
-        CSS.supports('top: constant(a)'))
-      document.write(
-        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
-        (coverSupport ? ', viewport-fit=cover' : '') + '" />')
-    </script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+    
     <title>game2</title>
-    <!--preload-links-->
-    <!--app-context-->
-    <script type="module" crossorigin src="/web/assets/index-CBhiR1_h.js"></script>
-    <link rel="stylesheet" crossorigin href="/web/assets/index-CQEd2NhP.css">
+
+    <!-- 修正 CSS 资源路径 -->
+    <link rel="stylesheet" href="./assets/uni.594cefce.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-CQEd2NhP.css">
+
+    <!-- 修正 JavaScript 资源路径 -->
+    <script type="module" crossorigin src="./assets/index-CBhiR1_h.js"></script>
   </head>
+  
   <body>
     <div id="app"><!--app-html--></div>
   </body>
